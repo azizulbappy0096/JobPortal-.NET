@@ -60,6 +60,24 @@
     <Compile Include="views\auth\Register.Designer.cs">
       <DependentUpon>Register.cs</DependentUpon>
     </Compile>
+    <Compile Include="views\dashboard\employer\DCompanyProfile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="views\dashboard\employer\DCompanyProfile.Designer.cs">
+      <DependentUpon>DCompanyProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="views\dashboard\employer\DEmployer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\dashboard\employer\DEmployer.Designer.cs">
+      <DependentUpon>DEmployer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="views\dashboard\employer\DEmployerJobPost.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="views\dashboard\employer\DEmployerJobPost.Designer.cs">
+      <DependentUpon>DEmployerJobPost.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -75,6 +93,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="views\auth\Register.resx">
       <DependentUpon>Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\dashboard\employer\DCompanyProfile.resx">
+      <DependentUpon>DCompanyProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\dashboard\employer\DEmployer.resx">
+      <DependentUpon>DEmployer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\dashboard\employer\DEmployerJobPost.resx">
+      <DependentUpon>DEmployerJobPost.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

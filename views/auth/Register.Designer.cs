@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Register));
             this.button2 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
@@ -47,10 +48,11 @@
             // 
             // button2
             // 
+            this.button2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button2.BackColor = System.Drawing.Color.Transparent;
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(747, 510);
+            this.button2.Location = new System.Drawing.Point(643, 507);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(94, 31);
             this.button2.TabIndex = 19;
@@ -60,9 +62,10 @@
             // 
             // label3
             // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label3.Location = new System.Drawing.Point(560, 518);
+            this.label3.Location = new System.Drawing.Point(456, 515);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(162, 16);
             this.label3.TabIndex = 18;
@@ -70,11 +73,13 @@
             // 
             // button1
             // 
+            this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button1.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(511, 441);
+            this.button1.Location = new System.Drawing.Point(407, 438);
             this.button1.Name = "button1";
             this.button1.Padding = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.button1.Size = new System.Drawing.Size(357, 50);
@@ -84,25 +89,28 @@
             // 
             // textBox2
             // 
+            this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(291, 267);
+            this.textBox2.Location = new System.Drawing.Point(187, 264);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(363, 32);
             this.textBox2.TabIndex = 16;
             // 
             // textBox1
             // 
+            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(291, 178);
+            this.textBox1.Location = new System.Drawing.Point(187, 175);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(363, 32);
             this.textBox1.TabIndex = 15;
             // 
             // label2
             // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(287, 232);
+            this.label2.Location = new System.Drawing.Point(183, 229);
             this.label2.Name = "label2";
             this.label2.Padding = new System.Windows.Forms.Padding(8, 6, 8, 6);
             this.label2.Size = new System.Drawing.Size(69, 32);
@@ -111,10 +119,11 @@
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(287, 147);
+            this.label1.Location = new System.Drawing.Point(183, 144);
             this.label1.Name = "label1";
             this.label1.Padding = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.label1.Size = new System.Drawing.Size(98, 28);
@@ -123,13 +132,14 @@
             // 
             // RegisterTitle
             // 
+            this.RegisterTitle.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.RegisterTitle.AutoSize = true;
             this.RegisterTitle.BackColor = System.Drawing.Color.Transparent;
             this.RegisterTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RegisterTitle.Location = new System.Drawing.Point(543, 48);
+            this.RegisterTitle.Location = new System.Drawing.Point(439, 45);
             this.RegisterTitle.Name = "RegisterTitle";
             this.RegisterTitle.Padding = new System.Windows.Forms.Padding(4);
-            this.RegisterTitle.Size = new System.Drawing.Size(325, 41);
+            this.RegisterTitle.Size = new System.Drawing.Size(316, 40);
             this.RegisterTitle.TabIndex = 12;
             this.RegisterTitle.Text = "Register to Job Portal\r\n";
             this.RegisterTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -137,8 +147,9 @@
             // 
             // textBox3
             // 
+            this.textBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(291, 361);
+            this.textBox3.Location = new System.Drawing.Point(187, 358);
             this.textBox3.Name = "textBox3";
             this.textBox3.PasswordChar = '*';
             this.textBox3.Size = new System.Drawing.Size(813, 32);
@@ -147,8 +158,9 @@
             // 
             // textBox4
             // 
+            this.textBox4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(737, 178);
+            this.textBox4.Location = new System.Drawing.Point(633, 175);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(367, 32);
             this.textBox4.TabIndex = 22;
@@ -156,9 +168,10 @@
             // 
             // label4
             // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(287, 326);
+            this.label4.Location = new System.Drawing.Point(183, 323);
             this.label4.Name = "label4";
             this.label4.Padding = new System.Windows.Forms.Padding(8, 6, 8, 6);
             this.label4.Size = new System.Drawing.Size(94, 32);
@@ -168,10 +181,11 @@
             // 
             // label5
             // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(733, 147);
+            this.label5.Location = new System.Drawing.Point(629, 144);
             this.label5.Name = "label5";
             this.label5.Padding = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.label5.Size = new System.Drawing.Size(98, 28);
@@ -181,8 +195,9 @@
             // 
             // radioButton1
             // 
+            this.radioButton1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(737, 275);
+            this.radioButton1.Location = new System.Drawing.Point(633, 272);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(86, 20);
             this.radioButton1.TabIndex = 24;
@@ -192,8 +207,9 @@
             // 
             // radioButton2
             // 
+            this.radioButton2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(879, 275);
+            this.radioButton2.Location = new System.Drawing.Point(775, 272);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(90, 20);
             this.radioButton2.TabIndex = 25;
@@ -203,10 +219,11 @@
             // 
             // label6
             // 
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(733, 232);
+            this.label6.Location = new System.Drawing.Point(629, 229);
             this.label6.Name = "label6";
             this.label6.Padding = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.label6.Size = new System.Drawing.Size(118, 28);
@@ -217,7 +234,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1341, 612);
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.ClientSize = new System.Drawing.Size(1182, 673);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.radioButton2);
             this.Controls.Add(this.radioButton1);
@@ -233,7 +251,10 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.RegisterTitle);
+            this.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Register";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Register";
             this.Load += new System.EventHandler(this.Register_Load);
             this.ResumeLayout(false);

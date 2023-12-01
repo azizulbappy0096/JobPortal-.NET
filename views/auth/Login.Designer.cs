@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.LoginTitle = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -40,13 +41,14 @@
             // 
             // LoginTitle
             // 
+            this.LoginTitle.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.LoginTitle.AutoSize = true;
             this.LoginTitle.BackColor = System.Drawing.Color.Transparent;
             this.LoginTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LoginTitle.Location = new System.Drawing.Point(531, 34);
+            this.LoginTitle.Location = new System.Drawing.Point(466, 34);
             this.LoginTitle.Name = "LoginTitle";
             this.LoginTitle.Padding = new System.Windows.Forms.Padding(4);
-            this.LoginTitle.Size = new System.Drawing.Size(284, 41);
+            this.LoginTitle.Size = new System.Drawing.Size(278, 40);
             this.LoginTitle.TabIndex = 1;
             this.LoginTitle.Text = "Login to Job Portal\r\n";
             this.LoginTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -54,10 +56,11 @@
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(292, 156);
+            this.label1.Location = new System.Drawing.Point(227, 156);
             this.label1.Name = "label1";
             this.label1.Padding = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.label1.Size = new System.Drawing.Size(65, 28);
@@ -66,9 +69,10 @@
             // 
             // label2
             // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(292, 259);
+            this.label2.Location = new System.Drawing.Point(227, 259);
             this.label2.Name = "label2";
             this.label2.Padding = new System.Windows.Forms.Padding(8, 6, 8, 6);
             this.label2.Size = new System.Drawing.Size(94, 32);
@@ -77,8 +81,9 @@
             // 
             // textBox1
             // 
+            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(296, 187);
+            this.textBox1.Location = new System.Drawing.Point(231, 187);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(727, 32);
             this.textBox1.TabIndex = 7;
@@ -86,8 +91,9 @@
             // 
             // textBox2
             // 
+            this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(296, 294);
+            this.textBox2.Location = new System.Drawing.Point(231, 294);
             this.textBox2.Name = "textBox2";
             this.textBox2.PasswordChar = '*';
             this.textBox2.Size = new System.Drawing.Size(727, 32);
@@ -95,11 +101,13 @@
             // 
             // button1
             // 
+            this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button1.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(498, 366);
+            this.button1.Location = new System.Drawing.Point(433, 366);
             this.button1.Name = "button1";
             this.button1.Padding = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.button1.Size = new System.Drawing.Size(357, 50);
@@ -110,9 +118,10 @@
             // 
             // label3
             // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label3.Location = new System.Drawing.Point(544, 444);
+            this.label3.Location = new System.Drawing.Point(479, 444);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(171, 16);
             this.label3.TabIndex = 10;
@@ -120,10 +129,12 @@
             // 
             // button2
             // 
+            this.button2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button2.BackColor = System.Drawing.Color.Transparent;
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(733, 436);
+            this.button2.Location = new System.Drawing.Point(668, 436);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(94, 31);
             this.button2.TabIndex = 11;
@@ -135,7 +146,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1315, 557);
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.ClientSize = new System.Drawing.Size(1182, 673);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.button1);
@@ -144,7 +156,9 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.LoginTitle);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Login";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             this.ResumeLayout(false);
             this.PerformLayout();
