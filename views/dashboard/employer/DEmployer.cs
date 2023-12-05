@@ -62,5 +62,10 @@ namespace JobPortal.views.dashboard
                 panel9.Controls.Add(jobPostPage);
             }
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

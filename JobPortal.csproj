@@ -60,6 +60,12 @@
     <Compile Include="views\auth\Register.Designer.cs">
       <DependentUpon>Register.cs</DependentUpon>
     </Compile>
+    <Compile Include="views\dashboard\employee\DEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\dashboard\employee\DEmployee.Designer.cs">
+      <DependentUpon>DEmployee.cs</DependentUpon>
+    </Compile>
     <Compile Include="views\dashboard\employer\DCompanyProfile.cs">
       <SubType>UserControl</SubType>
     </Compile>
