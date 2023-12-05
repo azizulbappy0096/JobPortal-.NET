@@ -66,6 +66,12 @@
     <Compile Include="views\dashboard\employee\DEmployee.Designer.cs">
       <DependentUpon>DEmployee.cs</DependentUpon>
     </Compile>
+    <Compile Include="views\dashboard\employee\MyProfile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="views\dashboard\employee\MyProfile.Designer.cs">
+      <DependentUpon>MyProfile.cs</DependentUpon>
+    </Compile>
     <Compile Include="views\dashboard\employer\DCompanyProfile.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -99,6 +105,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="views\auth\Register.resx">
       <DependentUpon>Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\dashboard\employee\DEmployee.resx">
+      <DependentUpon>DEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\dashboard\employee\MyProfile.resx">
+      <DependentUpon>MyProfile.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="views\dashboard\employer\DCompanyProfile.resx">
       <DependentUpon>DCompanyProfile.cs</DependentUpon>
