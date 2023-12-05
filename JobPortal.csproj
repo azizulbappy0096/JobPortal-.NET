@@ -67,6 +67,12 @@
     <Compile Include="views\dashboard\employee\appliedjobs.Designer.cs">
       <DependentUpon>appliedjobs.cs</DependentUpon>
     </Compile>
+    <Compile Include="views\dashboard\employee\changepassword.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="views\dashboard\employee\changepassword.Designer.cs">
+      <DependentUpon>changepassword.cs</DependentUpon>
+    </Compile>
     <Compile Include="views\dashboard\employee\cvmanager.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -127,6 +133,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="views\dashboard\employee\appliedjobs.resx">
       <DependentUpon>appliedjobs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\dashboard\employee\changepassword.resx">
+      <DependentUpon>changepassword.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="views\dashboard\employee\cvmanager.resx">
       <DependentUpon>cvmanager.cs</DependentUpon>
