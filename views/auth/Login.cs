@@ -1,4 +1,5 @@
 ﻿using JobPortal.views.dashboard;
+using JobPortal.views.dashboard.employee;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,6 +16,7 @@ namespace JobPortal.views.auth
     public partial class Login : Form
     {
         private DEmployer EmployerDashboard;
+        private DEmployee EmployeeDashboard;
         public Login()
         {
             InitializeComponent();
@@ -46,6 +48,13 @@ namespace JobPortal.views.auth
             this.Hide();
             register.Show();
       
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            EmployeeDashboard=new DEmployee();
+            this.Hide();
+            EmployeeDashboard.Show();
         }
     }
 }

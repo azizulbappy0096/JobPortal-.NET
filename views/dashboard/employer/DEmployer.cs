@@ -67,5 +67,10 @@ namespace JobPortal.views.dashboard
         {
 
         }
+
+        private void panel9_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
