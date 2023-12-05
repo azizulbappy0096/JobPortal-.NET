@@ -226,9 +226,9 @@
             this.label6.Location = new System.Drawing.Point(629, 229);
             this.label6.Name = "label6";
             this.label6.Padding = new System.Windows.Forms.Padding(6, 4, 6, 4);
-            this.label6.Size = new System.Drawing.Size(118, 28);
+            this.label6.Size = new System.Drawing.Size(149, 28);
             this.label6.TabIndex = 26;
-            this.label6.Text = "Account Type";
+            this.label6.Text = "Account Type test";
             // 
             // Register
             // 
