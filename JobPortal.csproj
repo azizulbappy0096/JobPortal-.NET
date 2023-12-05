@@ -60,6 +60,19 @@
     <Compile Include="views\auth\Register.Designer.cs">
       <DependentUpon>Register.cs</DependentUpon>
     </Compile>
+    <Compile Include="views\dashboard\employee\.Designer.cs" />
+    <Compile Include="views\dashboard\employee\appliedjobs.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="views\dashboard\employee\appliedjobs.Designer.cs">
+      <DependentUpon>appliedjobs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="views\dashboard\employee\cvmanager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="views\dashboard\employee\cvmanager.Designer.cs">
+      <DependentUpon>cvmanager.cs</DependentUpon>
+    </Compile>
     <Compile Include="views\dashboard\employee\DEmployee.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,6 +84,12 @@
     </Compile>
     <Compile Include="views\dashboard\employee\MyProfile.Designer.cs">
       <DependentUpon>MyProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="views\dashboard\employee\MyResume.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="views\dashboard\employee\MyResume.Designer.cs">
+      <DependentUpon>MyResume.cs</DependentUpon>
     </Compile>
     <Compile Include="views\dashboard\employer\DCompanyProfile.cs">
       <SubType>UserControl</SubType>
@@ -106,11 +125,20 @@
     <EmbeddedResource Include="views\auth\Register.resx">
       <DependentUpon>Register.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="views\dashboard\employee\appliedjobs.resx">
+      <DependentUpon>appliedjobs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\dashboard\employee\cvmanager.resx">
+      <DependentUpon>cvmanager.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="views\dashboard\employee\DEmployee.resx">
       <DependentUpon>DEmployee.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="views\dashboard\employee\MyProfile.resx">
       <DependentUpon>MyProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\dashboard\employee\MyResume.resx">
+      <DependentUpon>MyResume.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="views\dashboard\employer\DCompanyProfile.resx">
       <DependentUpon>DCompanyProfile.cs</DependentUpon>
