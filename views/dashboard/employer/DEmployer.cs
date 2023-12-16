@@ -16,6 +16,8 @@ namespace JobPortal.views.dashboard
         private DCompanyProfile companyProfilePage;
         private DEmployerJobPost jobPostPage;
         private changepassword changepasswordpage;
+        private allapplicants allapplicantsPage;
+        private Managejobs managejobspage;
 
         public DEmployer()
         {
@@ -57,7 +59,18 @@ namespace JobPortal.views.dashboard
 
         private void button4_Click(object sender, EventArgs e)
         {
-
+            if (managejobspage == null)
+            {
+                managejobspage = new Managejobs();
+                managejobspage.Dock = DockStyle.Fill;
+                panel9.Controls.Clear();
+                panel9.Controls.Add(managejobspage);
+            }
+            else
+            {
+                panel9.Controls.Clear();
+                panel9.Controls.Add(managejobspage);
+            }
         }
 
         private void panel9_Paint(object sender, PaintEventArgs e)
@@ -78,6 +91,24 @@ namespace JobPortal.views.dashboard
             {
                 panel9.Controls.Clear();
                 panel9.Controls.Add(changepasswordpage);
+            }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (allapplicantsPage == null) 
+            {
+                allapplicantsPage=new allapplicants();
+                allapplicantsPage.Dock = DockStyle.Fill;
+                panel9.Controls.Clear();
+                panel9.Controls.Add(allapplicantsPage);
+
+
+            }
+            else
+            {
+                panel9.Controls.Clear();
+                panel9.Controls.Add(allapplicantsPage);
             }
         }
     }

@@ -114,6 +114,18 @@
     <Compile Include="views\dashboard\employee\MyResume.Designer.cs">
       <DependentUpon>MyResume.cs</DependentUpon>
     </Compile>
+    <Compile Include="views\dashboard\employer\allapplicants.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="views\dashboard\employer\allapplicants.Designer.cs">
+      <DependentUpon>allapplicants.cs</DependentUpon>
+    </Compile>
+    <Compile Include="views\dashboard\employer\allapplicantspage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="views\dashboard\employer\allapplicantspage.Designer.cs">
+      <DependentUpon>allapplicantspage.cs</DependentUpon>
+    </Compile>
     <Compile Include="views\dashboard\employer\changepassword.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -192,6 +204,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="views\dashboard\employee\MyResume.resx">
       <DependentUpon>MyResume.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\dashboard\employer\allapplicants.resx">
+      <DependentUpon>allapplicants.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\dashboard\employer\allapplicantspage.resx">
+      <DependentUpon>allapplicantspage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="views\dashboard\employer\changepassword.resx">
       <DependentUpon>changepassword.cs</DependentUpon>
