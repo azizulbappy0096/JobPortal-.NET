@@ -15,6 +15,7 @@ namespace JobPortal.views.dashboard
     {
         private DCompanyProfile companyProfilePage;
         private DEmployerJobPost jobPostPage;
+        private changepassword changepasswordpage;
 
         public DEmployer()
         {
@@ -62,6 +63,22 @@ namespace JobPortal.views.dashboard
         private void panel9_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+           if(changepasswordpage == null)
+            {
+                changepasswordpage = new changepassword();
+                changepasswordpage.Dock = DockStyle.Fill;
+                panel9.Controls.Clear();
+                panel9.Controls.Add(changepasswordpage);
+            }
+           else
+            {
+                panel9.Controls.Clear();
+                panel9.Controls.Add(changepasswordpage);
+            }
         }
     }
 }

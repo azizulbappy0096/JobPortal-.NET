@@ -1,4 +1,5 @@
-﻿using JobPortal.views.dashboard;
+﻿using JobPortal.views.common;
+using JobPortal.views.dashboard;
 using JobPortal.views.dashboard.employee;
 using System;
 using System.Collections.Generic;
@@ -17,6 +18,7 @@ namespace JobPortal.views.auth
     {
         private DEmployer EmployerDashboard;
         private DEmployee EmployeeDashboard;
+        private jobsearch jobsearchcommon;
         public Login()
         {
             InitializeComponent();
@@ -55,6 +57,13 @@ namespace JobPortal.views.auth
             EmployeeDashboard=new DEmployee();
             this.Hide();
             EmployeeDashboard.Show();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            jobsearchcommon = new jobsearch();
+            this.Hide();
+            jobsearchcommon.Show();
         }
     }
 }
