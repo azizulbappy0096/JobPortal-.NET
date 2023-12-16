@@ -23,6 +23,14 @@ namespace JobPortal.views.dashboard.employee
             InitializeComponent();
         }
 
+        private void addUserControl(UserControl userControl)
+        {
+            userControl.Dock = DockStyle.Fill;
+            panel7.Controls.Clear();
+            panel7.Controls.Add(userControl);
+            userControl.BringToFront();
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
 
@@ -30,86 +38,39 @@ namespace JobPortal.views.dashboard.employee
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            if(profilepage==null)
-            {
-                profilepage = new MyProfile();
-                profilepage.Dock = DockStyle.Fill;
-                panel9.Controls.Clear();
-                panel9.Controls.Add(profilepage);
+            profilepage = new MyProfile();
+            addUserControl(profilepage);
 
-            }
-            else
-            {
-                panel9.Controls.Clear();
-                panel9.Controls.Add(profilepage);
-            }
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if (myresumepage==null) 
-            {
-                myresumepage = new MyResume();
-                myresumepage.Dock = DockStyle.Fill;
-                panel9.Controls.Clear();
-                panel9.Controls.Add(myresumepage);
-            }
-            else
-            {
-                panel9.Controls.Clear();
-                panel9.Controls.Add(myresumepage);
-            }
-           
+            myresumepage = new MyResume();
+            addUserControl(myresumepage);
+
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            if (appliedjobpage == null)
-            {
-                appliedjobpage = new appliedjobs();
-                appliedjobpage.Dock = DockStyle.Fill;
-                panel9.Controls.Clear();
-                panel9.Controls.Add(appliedjobpage);
-
-            }
-            else
-            {
-                panel9.Controls.Clear();
-                panel9.Controls.Add(appliedjobpage);
-            }
+            appliedjobpage = new appliedjobs();
+            addUserControl(appliedjobpage);
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            if(cvmanagerpage == null)
-            {
-                cvmanagerpage = new cvmanager();
-                cvmanagerpage.Dock = DockStyle.Fill;
-                panel9.Controls.Clear();
-                panel9.Controls.Add(cvmanagerpage);
-            }
-            else
-            {
-                panel9.Controls.Clear();
-                panel9.Controls.Add(cvmanagerpage);
-            }
+            cvmanagerpage = new cvmanager();
+            addUserControl(cvmanagerpage);
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
-            if (changepasswordpage==null)
-            {
-                changepasswordpage=new changepassword();
-                changepasswordpage.Dock = DockStyle.Fill;
-                panel9.Controls.Clear();
-                panel9.Controls.Add(changepasswordpage);
+            changepasswordpage=new changepassword();
+            addUserControl(changepasswordpage);
+        }
 
-            }
-            else
-            {
-                panel9.Controls.Clear();
-               panel9.Controls.Add(changepasswordpage);
-            }
+        private void DEmployee_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

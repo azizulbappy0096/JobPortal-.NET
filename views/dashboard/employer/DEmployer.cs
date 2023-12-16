@@ -22,6 +22,14 @@ namespace JobPortal.views.dashboard
             
         }
 
+        private void addUserControl(UserControl userControl)
+        {
+            userControl.Dock = DockStyle.Fill;
+            panel7.Controls.Clear();
+            panel7.Controls.Add(userControl);
+            userControl.BringToFront();
+        }
+
         private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
         {
     
@@ -34,33 +42,16 @@ namespace JobPortal.views.dashboard
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if(companyProfilePage == null)
-            {
-                companyProfilePage = new DCompanyProfile();
-                companyProfilePage.Dock = DockStyle.Fill;
-                panel9.Controls.Clear();
-                panel9.Controls.Add(companyProfilePage);
-            }else
-            {
-                panel9.Controls.Clear();
-                panel9.Controls.Add(companyProfilePage);
-            }
+            companyProfilePage = new DCompanyProfile();
+            addUserControl(companyProfilePage);
+
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if (jobPostPage == null)
-            {
-                jobPostPage = new DEmployerJobPost();
-                jobPostPage.Dock = DockStyle.Fill;
-                panel9.Controls.Clear();
-                panel9.Controls.Add(jobPostPage);
-            }
-            else
-            {
-                panel9.Controls.Clear();
-                panel9.Controls.Add(jobPostPage);
-            }
+            jobPostPage = new DEmployerJobPost();
+            addUserControl(jobPostPage);
+
         }
 
         private void button4_Click(object sender, EventArgs e)
