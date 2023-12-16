@@ -60,7 +60,24 @@
     <Compile Include="views\auth\Register.Designer.cs">
       <DependentUpon>Register.cs</DependentUpon>
     </Compile>
-    <Compile Include="views\dashboard\employee\.Designer.cs" />
+    <Compile Include="views\common\jobcard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="views\common\jobcard.Designer.cs">
+      <DependentUpon>jobcard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="views\common\jobdetails.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="views\common\jobdetails.Designer.cs">
+      <DependentUpon>jobdetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="views\common\jobsearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\common\jobsearch.Designer.cs">
+      <DependentUpon>jobsearch.cs</DependentUpon>
+    </Compile>
     <Compile Include="views\dashboard\employee\appliedjobs.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -97,6 +114,12 @@
     <Compile Include="views\dashboard\employee\MyResume.Designer.cs">
       <DependentUpon>MyResume.cs</DependentUpon>
     </Compile>
+    <Compile Include="views\dashboard\employer\changepassword.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="views\dashboard\employer\changepassword.Designer.cs">
+      <DependentUpon>changepassword.cs</DependentUpon>
+    </Compile>
     <Compile Include="views\dashboard\employer\DCompanyProfile.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -131,6 +154,15 @@
     <EmbeddedResource Include="views\auth\Register.resx">
       <DependentUpon>Register.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="views\common\jobcard.resx">
+      <DependentUpon>jobcard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\common\jobdetails.resx">
+      <DependentUpon>jobdetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\common\jobsearch.resx">
+      <DependentUpon>jobsearch.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="views\dashboard\employee\appliedjobs.resx">
       <DependentUpon>appliedjobs.cs</DependentUpon>
     </EmbeddedResource>
@@ -148,6 +180,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="views\dashboard\employee\MyResume.resx">
       <DependentUpon>MyResume.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\dashboard\employer\changepassword.resx">
+      <DependentUpon>changepassword.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="views\dashboard\employer\DCompanyProfile.resx">
       <DependentUpon>DCompanyProfile.cs</DependentUpon>
