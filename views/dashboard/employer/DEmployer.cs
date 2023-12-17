@@ -1,4 +1,6 @@
-﻿using JobPortal.views.dashboard.employer;
+﻿using JobPortal.views.auth;
+using JobPortal.views.common;
+using JobPortal.views.dashboard.employer;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,11 +15,13 @@ namespace JobPortal.views.dashboard
 {
     public partial class DEmployer : Form
     {
+        private Login loginPage;
         private DCompanyProfile companyProfilePage;
         private DEmployerJobPost jobPostPage;
         private changepassword changepasswordpage;
         private allapplicants allapplicantsPage;
         private Managejobs managejobspage;
+        private jobsearch jobSearchPage;
 
         public DEmployer()
         {
@@ -100,6 +104,19 @@ namespace JobPortal.views.dashboard
                 panel9.Controls.Clear();
                 panel9.Controls.Add(allapplicantsPage);
             }
+        }
+
+        private void button5_Click_1(object sender, EventArgs e)
+        {
+            loginPage = new Login();
+            this.Hide();
+            loginPage.Show();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            jobSearchPage = new jobsearch();
+            jobSearchPage.Show();
         }
     }
 }

@@ -45,6 +45,10 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.button5 = new System.Windows.Forms.Button();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.button7 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -52,6 +56,8 @@
             this.panel3.SuspendLayout();
             this.panel8.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.panel10.SuspendLayout();
+            this.panel11.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -70,6 +76,7 @@
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.panel11);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(3, 4);
             this.panel1.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
@@ -222,6 +229,7 @@
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Controls.Add(this.panel10);
             this.panel2.Controls.Add(this.panel8);
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Controls.Add(this.panel5);
@@ -243,7 +251,7 @@
             this.panel9.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.panel9.BackColor = System.Drawing.Color.Transparent;
             this.panel9.Location = new System.Drawing.Point(356, 87);
-            this.panel9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel9.Margin = new System.Windows.Forms.Padding(4);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(0, 0);
             this.panel9.TabIndex = 5;
@@ -259,6 +267,60 @@
             this.panel7.Size = new System.Drawing.Size(818, 582);
             this.panel7.TabIndex = 6;
             // 
+            // panel10
+            // 
+            this.panel10.Controls.Add(this.button5);
+            this.panel10.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.panel10.Location = new System.Drawing.Point(27, 457);
+            this.panel10.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(285, 66);
+            this.panel10.TabIndex = 8;
+            // 
+            // button5
+            // 
+            this.button5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.button5.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.ForeColor = System.Drawing.Color.White;
+            this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button5.Location = new System.Drawing.Point(-32, -19);
+            this.button5.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.button5.Name = "button5";
+            this.button5.Padding = new System.Windows.Forms.Padding(32, 7, 32, 7);
+            this.button5.Size = new System.Drawing.Size(353, 106);
+            this.button5.TabIndex = 0;
+            this.button5.Text = "Logout";
+            this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click_1);
+            // 
+            // panel11
+            // 
+            this.panel11.Controls.Add(this.button7);
+            this.panel11.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.panel11.Location = new System.Drawing.Point(979, 11);
+            this.panel11.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(186, 47);
+            this.panel11.TabIndex = 9;
+            // 
+            // button7
+            // 
+            this.button7.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.button7.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button7.ForeColor = System.Drawing.Color.White;
+            this.button7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button7.Location = new System.Drawing.Point(-81, -29);
+            this.button7.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.button7.Name = "button7";
+            this.button7.Padding = new System.Windows.Forms.Padding(32, 7, 32, 7);
+            this.button7.Size = new System.Drawing.Size(353, 106);
+            this.button7.TabIndex = 0;
+            this.button7.Text = "All Job Posts";
+            this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
             // DEmployee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -268,7 +330,7 @@
             this.Controls.Add(this.panel9);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "DEmployee";
             this.Text = "DEmployee";
             this.Load += new System.EventHandler(this.DEmployee_Load);
@@ -280,6 +342,8 @@
             this.panel3.ResumeLayout(false);
             this.panel8.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
+            this.panel10.ResumeLayout(false);
+            this.panel11.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -303,5 +367,9 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Panel panel10;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Panel panel11;
+        private System.Windows.Forms.Button button7;
     }
 }

@@ -19,20 +19,19 @@ namespace JobPortal.views.common
             InitializeComponent();
         }
 
+        private void addUserControl(UserControl userControl)
+        {
+            userControl.Dock = DockStyle.Fill;
+            panel2.Controls.Clear();
+            panel2.Controls.Add(userControl);
+            userControl.BringToFront();
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
-            if (jobcardpage == null)
-            {
-                jobcardpage = new jobcard();
-                jobcardpage.Dock = DockStyle.Fill;
-                panel2.Controls.Clear();
-                panel2.Controls.Add(jobcardpage);
-            }
-            else
-            {
-                panel2.Controls.Clear();
-                panel2.Controls.Add(jobcardpage);
-            }
+            jobcardpage = new jobcard();
+            addUserControl(jobcardpage);
+
         }
     }
 }

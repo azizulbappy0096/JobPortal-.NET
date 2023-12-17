@@ -36,10 +36,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.listBox2 = new System.Windows.Forms.ListBox();
-            this.listBox3 = new System.Windows.Forms.ListBox();
-            this.listBox4 = new System.Windows.Forms.ListBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.comboBox4 = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label9
@@ -133,45 +133,63 @@
             this.label4.TabIndex = 61;
             this.label4.Text = "Skills";
             // 
-            // listBox1
+            // comboBox1
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 16;
-            this.listBox1.Location = new System.Drawing.Point(24, 406);
-            this.listBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(364, 52);
-            this.listBox1.TabIndex = 62;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "SSC",
+            "HSC",
+            "Undergraduate",
+            "Graduate",
+            "Phd"});
+            this.comboBox1.Location = new System.Drawing.Point(24, 418);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(361, 24);
+            this.comboBox1.TabIndex = 66;
             // 
-            // listBox2
+            // comboBox2
             // 
-            this.listBox2.FormattingEnabled = true;
-            this.listBox2.ItemHeight = 16;
-            this.listBox2.Location = new System.Drawing.Point(21, 510);
-            this.listBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(364, 52);
-            this.listBox2.TabIndex = 63;
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "N/A",
+            "National ",
+            "Domestic"});
+            this.comboBox2.Location = new System.Drawing.Point(21, 611);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(361, 24);
+            this.comboBox2.TabIndex = 67;
             // 
-            // listBox3
+            // comboBox3
             // 
-            this.listBox3.FormattingEnabled = true;
-            this.listBox3.ItemHeight = 16;
-            this.listBox3.Location = new System.Drawing.Point(24, 601);
-            this.listBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.listBox3.Name = "listBox3";
-            this.listBox3.Size = new System.Drawing.Size(364, 52);
-            this.listBox3.TabIndex = 64;
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Items.AddRange(new object[] {
+            "N/A",
+            "1 year",
+            "2 years",
+            "5 years"});
+            this.comboBox3.Location = new System.Drawing.Point(21, 517);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(361, 24);
+            this.comboBox3.TabIndex = 68;
             // 
-            // listBox4
+            // comboBox4
             // 
-            this.listBox4.FormattingEnabled = true;
-            this.listBox4.ItemHeight = 16;
-            this.listBox4.Location = new System.Drawing.Point(21, 690);
-            this.listBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.listBox4.Name = "listBox4";
-            this.listBox4.Size = new System.Drawing.Size(364, 52);
-            this.listBox4.TabIndex = 65;
+            this.comboBox4.FormattingEnabled = true;
+            this.comboBox4.Items.AddRange(new object[] {
+            "Programming",
+            "WebDevelopment",
+            "            DatabaseManagement",
+            "            DataAnalysis",
+            "            ProjectManagement",
+            "            CommunicationSkills",
+            "            TeamCollaboration",
+            "            ProblemSolving",
+            "            CriticalThinking",
+            "            TimeManagement"});
+            this.comboBox4.Location = new System.Drawing.Point(21, 691);
+            this.comboBox4.Name = "comboBox4";
+            this.comboBox4.Size = new System.Drawing.Size(361, 24);
+            this.comboBox4.TabIndex = 69;
             // 
             // MyResume
             // 
@@ -179,10 +197,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.Controls.Add(this.listBox4);
-            this.Controls.Add(this.listBox3);
-            this.Controls.Add(this.listBox2);
-            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.comboBox4);
+            this.Controls.Add(this.comboBox3);
+            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -191,7 +209,7 @@
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "MyResume";
             this.Size = new System.Drawing.Size(900, 999);
             this.Load += new System.EventHandler(this.MyResume_Load);
@@ -210,9 +228,9 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.ListBox listBox2;
-        private System.Windows.Forms.ListBox listBox3;
-        private System.Windows.Forms.ListBox listBox4;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox comboBox4;
     }
 }

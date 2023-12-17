@@ -46,6 +46,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="models\EmployeeUser.cs" />
+    <Compile Include="models\EmployerUser.cs" />
+    <Compile Include="models\User.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="views\auth\Login.cs">
@@ -246,6 +249,10 @@
     <Content Include=".gitignore" />
     <None Include="assets\images\globe01.jpg" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="controllers\" />
+    <Folder Include="database\" />
+    <Folder Include="services\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
