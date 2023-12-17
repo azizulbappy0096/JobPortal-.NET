@@ -26,8 +26,8 @@ namespace JobPortal.views.dashboard
         private void addUserControl(UserControl userControl)
         {
             userControl.Dock = DockStyle.Fill;
-            panel7.Controls.Clear();
-            panel7.Controls.Add(userControl);
+            panel9.Controls.Clear();
+            panel9.Controls.Add(userControl);
             userControl.BringToFront();
         }
 
@@ -67,18 +67,8 @@ namespace JobPortal.views.dashboard
 
         private void button6_Click(object sender, EventArgs e)
         {
-           if(changepasswordpage == null)
-            {
-                changepasswordpage = new changepassword();
-                changepasswordpage.Dock = DockStyle.Fill;
-                panel9.Controls.Clear();
-                panel9.Controls.Add(changepasswordpage);
-            }
-           else
-            {
-                panel9.Controls.Clear();
-                panel9.Controls.Add(changepasswordpage);
-            }
+            changepasswordpage = new changepassword();
+            addUserControl(changepasswordpage);
         }
     }
 }
