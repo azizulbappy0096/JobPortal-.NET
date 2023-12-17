@@ -27,7 +27,12 @@ namespace JobPortal.views.dashboard.employer
 
         private void button1_Click(object sender, EventArgs e)
         {
-            viewpage=new view();
+            
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            viewpage = new view();
             addUserControl(viewpage);
         }
     }
