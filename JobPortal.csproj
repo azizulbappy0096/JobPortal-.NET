@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Home\home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home\home.Designer.cs">
+      <DependentUpon>home.cs</DependentUpon>
+    </Compile>
     <Compile Include="models\EmployeeUser.cs" />
     <Compile Include="models\EmployerUser.cs" />
     <Compile Include="models\User.cs" />
@@ -165,6 +171,9 @@
     <Compile Include="views\dashboard\employer\view.Designer.cs">
       <DependentUpon>view.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Home\home.resx">
+      <DependentUpon>home.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -247,6 +256,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include=".gitignore" />
+    <None Include="assets\images\icons\icons8-innovation-32.png" />
+    <None Include="assets\images\icons\icons8-cv-24.png" />
+    <None Include="assets\images\icons\icons8-mail-24.png" />
+    <None Include="assets\images\icons\icons8-work-30.png" />
+    <None Include="assets\images\icons\portfolio.png" />
+    <None Include="assets\images\banner-img-1.png" />
+    <None Include="assets\images\mid.jpg" />
+    <None Include="assets\images\hunters-race-MYbhN8KaaEc-unsplash.jpg" />
     <None Include="assets\images\globe01.jpg" />
   </ItemGroup>
   <ItemGroup>
