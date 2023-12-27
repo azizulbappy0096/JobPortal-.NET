@@ -1,4 +1,5 @@
-﻿using JobPortal.models;
+﻿using JobPortal.database;
+using JobPortal.models;
 using JobPortal.views.common;
 using JobPortal.views.dashboard;
 using JobPortal.views.dashboard.employee;
@@ -6,10 +7,12 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Reflection.Emit;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -43,6 +46,13 @@ namespace JobPortal.views.auth
 
         private void button1_Click(object sender, EventArgs e)
         {
+   
+            if (String.IsNullOrEmpty(this.Email) || !IsEmailValid(this.Email))
+            {
+                MessageBox.Show("Invalid e-mail address, please try again");
+                return;
+            }
+
             if(this.Email == "employer@gmail.com" && this.Password == "demo")
             {
                 EmployerDashboard = new DEmployer();
@@ -80,6 +90,15 @@ namespace JobPortal.views.auth
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
             this.Password = textBox2.Text;
+        }
+
+        private bool IsEmailValid(string email)
+        {
+            string pattern = @"^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$";
+
+            Regex regex = new Regex(pattern);
+
+            return regex.IsMatch(email);
         }
     }
 }

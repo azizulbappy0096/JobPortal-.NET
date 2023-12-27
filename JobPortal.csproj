@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="database\Conn.cs" />
     <Compile Include="models\EmployeeUser.cs" />
     <Compile Include="models\EmployerUser.cs" />
     <Compile Include="models\User.cs" />
@@ -251,7 +252,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="controllers\" />
-    <Folder Include="database\" />
     <Folder Include="services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

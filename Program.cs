@@ -1,4 +1,5 @@
-﻿using JobPortal.views.auth;
+﻿using JobPortal.database;
+using JobPortal.views.auth;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,6 +18,7 @@ namespace JobPortal
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            new Conn();
             Application.Run(new Login());
         }
     }
