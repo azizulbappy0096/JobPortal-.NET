@@ -51,6 +51,8 @@
             this.label11 = new System.Windows.Forms.Label();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // panel1
@@ -185,7 +187,7 @@
             // textBox3
             // 
             this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(12, 188);
+            this.textBox3.Location = new System.Drawing.Point(415, 395);
             this.textBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(303, 32);
@@ -197,7 +199,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(8, 159);
+            this.label3.Location = new System.Drawing.Point(411, 366);
             this.label3.Name = "label3";
             this.label3.Padding = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.label3.Size = new System.Drawing.Size(65, 28);
@@ -208,7 +210,7 @@
             // textBox2
             // 
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(415, 123);
+            this.textBox2.Location = new System.Drawing.Point(7, 188);
             this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(303, 32);
@@ -220,7 +222,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(411, 94);
+            this.label2.Location = new System.Drawing.Point(3, 159);
             this.label2.Name = "label2";
             this.label2.Padding = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.label2.Size = new System.Drawing.Size(63, 28);
@@ -245,9 +247,9 @@
             this.label1.Location = new System.Drawing.Point(8, 94);
             this.label1.Name = "label1";
             this.label1.Padding = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.label1.Size = new System.Drawing.Size(94, 28);
+            this.label1.Size = new System.Drawing.Size(100, 28);
             this.label1.TabIndex = 38;
-            this.label1.Text = "Full  Name";
+            this.label1.Text = "First  Name";
             // 
             // textBox6
             // 
@@ -315,12 +317,36 @@
             this.label12.TabIndex = 59;
             this.label12.Text = "Education Levels";
             // 
+            // textBox9
+            // 
+            this.textBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox9.Location = new System.Drawing.Point(415, 123);
+            this.textBox9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(303, 32);
+            this.textBox9.TabIndex = 62;
+            this.textBox9.TextChanged += new System.EventHandler(this.textBox9_TextChanged);
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.BackColor = System.Drawing.Color.Transparent;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(411, 94);
+            this.label13.Name = "label13";
+            this.label13.Padding = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.label13.Size = new System.Drawing.Size(94, 28);
+            this.label13.TabIndex = 61;
+            this.label13.Text = "Last name";
+            // 
             // MyProfile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.Controls.Add(this.textBox9);
+            this.Controls.Add(this.label13);
             this.Controls.Add(this.textBox8);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.textBox7);
@@ -378,5 +404,7 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.Label label13;
     }
 }

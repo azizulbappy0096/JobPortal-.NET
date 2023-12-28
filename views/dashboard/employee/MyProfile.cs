@@ -13,7 +13,8 @@ namespace JobPortal.views.dashboard.employee
 {
     public partial class MyProfile : UserControl
     {
-        public string FullName {  get; private set; }
+        public string FirstName {  get; private set; }
+        public string LastName { get; private set; }
         public string Email { get; private set; }
         public string Phone {  get; private set; }
         public string JobTitle { get; private set; }
@@ -41,7 +42,8 @@ namespace JobPortal.views.dashboard.employee
 
         private void MyProfile_Load(object sender, EventArgs e)
         {
-            textBox1.Text = EmployeeUser.FullName;
+            textBox1.Text = EmployeeUser.FirstName;
+            textBox9.Text = EmployeeUser.LastName;
             textBox2.Text = EmployeeUser.Email;
             textBox3.Text = EmployeeUser.Phone;
             textBox4.Text = "Demo Jobtitle";
@@ -55,7 +57,7 @@ namespace JobPortal.views.dashboard.employee
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            this.FullName = textBox1.Text;
+            this.FirstName = textBox1.Text;
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
@@ -101,6 +103,11 @@ namespace JobPortal.views.dashboard.employee
         private void richTextBox1_TextChanged(object sender, EventArgs e)
         {
             this.Bio = richTextBox1.Text;
+        }
+
+        private void textBox9_TextChanged(object sender, EventArgs e)
+        {
+            this.LastName = textBox9.Text;
         }
     }
 }

@@ -8,7 +8,7 @@ namespace JobPortal.models
 {
     internal class EmployeeUser:User
     {
-        public EmployeeUser(int id, string fullName, string email, string password, string accountType, string phone) :base(id, fullName, email, password, accountType, phone) 
+        public EmployeeUser(string id, string firtsName, string lastName, string email, string accountType, string phone) :base(id, firtsName, lastName, email, accountType, phone) 
         { 
         
         }

@@ -1,5 +1,7 @@
-﻿using JobPortal.database;
+﻿using JobPortal.controllers;
+using JobPortal.database;
 using JobPortal.models;
+using JobPortal.utils;
 using JobPortal.views.common;
 using JobPortal.views.dashboard;
 using JobPortal.views.dashboard.employee;
@@ -20,6 +22,9 @@ namespace JobPortal.views.auth
 {
     public partial class Login : Form
     {
+        private HelperF functions = new HelperF();
+        private Auth AuthControllers = new Auth();
+
         private DEmployer EmployerDashboard;
         private DEmployee EmployeeDashboard;
         private jobsearch jobsearchcommon;
@@ -47,29 +52,39 @@ namespace JobPortal.views.auth
         private void button1_Click(object sender, EventArgs e)
         {
    
-            if (String.IsNullOrEmpty(this.Email) || !IsEmailValid(this.Email))
+            if (String.IsNullOrEmpty(this.Email) || !functions.IsEmailValid(this.Email))
             {
                 MessageBox.Show("Invalid e-mail address, please try again");
                 return;
             }
+            Response<User> res = AuthControllers.Login(Email, Password);
 
-            if(this.Email == "employer@gmail.com" && this.Password == "demo")
+            Console.WriteLine(res.success);
+
+            if(res.success)
             {
-                EmployerDashboard = new DEmployer();
-                this.Hide();
-                EmployerDashboard.Show();
-                CurrentUser = new EmployerUser(1, "Demo Employer", "employer@gmail.com", "demo", "employer", "019275123");
-                return;
-            }else if (this.Email == "employee@gmail.com" && this.Password == "demo")
-            {
-                EmployeeDashboard = new DEmployee();
-                this.Hide();
-                EmployeeDashboard.Show();
-                CurrentUser = new EmployeeUser(2, "Demo Employee", "employee@gmail.com", "demo", "employee", "019275123");
+                Console.WriteLine(User.Id);
+                if (User.AccountType.Trim() == "Employer")
+                {
+                    CurrentUser = (EmployerUser)CurrentUser;
+
+                    EmployerDashboard = new DEmployer();
+                    this.Hide();
+                    EmployerDashboard.Show();
+                }
+                else if(User.AccountType.Trim() == "Employee")
+                {
+                    CurrentUser = (EmployeeUser)CurrentUser;
+                    EmployeeDashboard = new DEmployee();
+                    this.Hide();
+                    EmployeeDashboard.Show();
+                }
                 return;
             }
-
-            MessageBox.Show("Invalid credentials, please try again");
+            else
+            {
+                MessageBox.Show("Invalid credentials, please try again");
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -92,13 +107,9 @@ namespace JobPortal.views.auth
             this.Password = textBox2.Text;
         }
 
-        private bool IsEmailValid(string email)
+        private void Login_Load(object sender, EventArgs e)
         {
-            string pattern = @"^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$";
 
-            Regex regex = new Regex(pattern);
-
-            return regex.IsMatch(email);
         }
     }
 }

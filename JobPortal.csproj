@@ -46,10 +46,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Home\home.cs">
+    <Compile Include="controllers\Auth.cs" />
+    <Compile Include="controllers\Common.cs" />
+    <Compile Include="controllers\EmployerControllers.cs" />
+    <Compile Include="controllers\EmployeeControllers.cs" />
+    <Compile Include="models\Company.cs" />
+    <Compile Include="models\Job.cs" />
+    <Compile Include="models\Response.cs" />
+    <Compile Include="services\ICommon.cs" />
+    <Compile Include="services\IAuth.cs" />
+    <Compile Include="services\IEmployee.cs" />
+    <Compile Include="services\IEmployer.cs" />
+    <Compile Include="utils\HelperF.cs" />
+    <Compile Include="views\Home\home.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Home\home.Designer.cs">
+    <Compile Include="views\Home\home.Designer.cs">
       <DependentUpon>home.cs</DependentUpon>
     </Compile>
     <Compile Include="database\Conn.cs" />
@@ -172,7 +184,7 @@
     <Compile Include="views\dashboard\employer\view.Designer.cs">
       <DependentUpon>view.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Home\home.resx">
+    <EmbeddedResource Include="views\Home\home.resx">
       <DependentUpon>home.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -267,9 +279,6 @@
     <None Include="assets\images\hunters-race-MYbhN8KaaEc-unsplash.jpg" />
     <None Include="assets\images\globe01.jpg" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="controllers\" />
-    <Folder Include="services\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

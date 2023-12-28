@@ -1,4 +1,5 @@
 ﻿using JobPortal.database;
+using JobPortal.Home;
 using JobPortal.views.auth;
 using System;
 using System.Collections.Generic;
@@ -19,7 +20,7 @@ namespace JobPortal
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             new Conn();
-            Application.Run(new Login());
+            Application.Run(new home());
         }
     }
 }

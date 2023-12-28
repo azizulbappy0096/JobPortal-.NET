@@ -1,4 +1,7 @@
-﻿using System;
+﻿using JobPortal.controllers;
+using JobPortal.models;
+using JobPortal.views.common;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,18 +15,29 @@ namespace JobPortal.views.dashboard.employer
 {
     public partial class Managejobs : UserControl
     {
-        view viewpage;
+        EmployerControllers eControllers = new EmployerControllers();
+
+        List<Job> jobs = new List<Job>();
         public Managejobs()
         {
             InitializeComponent();
+            Response<List<Job>> res = eControllers.GetJobs(User.Id);
+            view[] lists = new view[res.Data.Count];
+
+            for (int i = 0; i < res.Data.Count; i++) 
+            {
+                
+                    lists[i] = new view(res.Data[i].title, res.Data[i].deadline, res.Data[i].Id);
+                    flowLayoutPanel1.Controls.Add(lists[i]);
+                
+            }
+
+            if(!res.success)
+            {
+                MessageBox.Show("No job found");
+            }
         }
-        private void addUserControl(UserControl userControl)
-        {
-            userControl.Dock = DockStyle.Fill;
-            panel2.Controls.Clear();
-            panel2.Controls.Add(userControl);
-            userControl.BringToFront();
-        }
+        
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -32,8 +46,8 @@ namespace JobPortal.views.dashboard.employer
 
         private void button5_Click(object sender, EventArgs e)
         {
-            viewpage = new view();
-            addUserControl(viewpage);
+            
+            
         }
     }
 }

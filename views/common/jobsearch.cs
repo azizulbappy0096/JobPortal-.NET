@@ -1,4 +1,7 @@
-﻿using System;
+﻿using JobPortal.controllers;
+using JobPortal.models;
+using JobPortal.views.dashboard.employer;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,25 +16,69 @@ namespace JobPortal.views.common
     public partial class jobsearch : Form
         
     {
-        jobcard jobcardpage;
+        private Common commonController = new Common();
+        private List<Job> jobs = new List<Job>();
+
+        private string _location {  get; set; }
         public jobsearch()
         {
             InitializeComponent();
-        }
+            flowLayoutPanel1.Controls.Clear();
+            Response<List<Job>> res = commonController.GetJobs();
+            jobcard[] lists = new jobcard[res.Data.Count];
+          
+            for (int i = 0; i < res.Data.Count; i++)
+            {
 
-        private void addUserControl(UserControl userControl)
-        {
-            userControl.Dock = DockStyle.Fill;
-            panel2.Controls.Clear();
-            panel2.Controls.Add(userControl);
-            userControl.BringToFront();
+                lists[i] = new jobcard(res.Data[i].title, res.Data[i].city, res.Data[i].country, res.Data[i].salary, res.Data[i].type);
+                flowLayoutPanel1.Controls.Add(lists[i]);
+
+            }
+
+            if (!res.success)
+            {
+                MessageBox.Show("No job found");
+            }
+
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            jobcardpage = new jobcard();
-            addUserControl(jobcardpage);
 
+            if(String.IsNullOrEmpty(_location))
+            {
+                MessageBox.Show("Invalid: location field is empty");
+                return;
+            }
+
+            flowLayoutPanel1.Controls.Clear();
+            Response<List<Job>> res = commonController.GetJobsByQuery(_location);
+            jobcard[] lists = new jobcard[res.Data.Count];
+
+            for (int i = 0; i < res.Data.Count; i++)
+            {
+
+                lists[i] = new jobcard(res.Data[i].title, res.Data[i].city, res.Data[i].country, res.Data[i].salary, res.Data[i].type);
+                flowLayoutPanel1.Controls.Add(lists[i]);
+
+            }
+
+            if (!res.success)
+            {
+                MessageBox.Show("No job found");
+            }
+
+
+        }
+
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+            _location = textBox2.Text;
         }
     }
 }

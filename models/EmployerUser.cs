@@ -9,7 +9,7 @@ namespace JobPortal.models
     internal class EmployerUser : User
     {
 
-        public EmployerUser(int id, string fullName, string email, string password, string accountType, string phone) : base(id, fullName, email, password, accountType, phone)
+        public EmployerUser(string id, string firtsName, string lastName, string email, string accountType, string phone) : base(id, firtsName, lastName, email, accountType, phone)
         {
 
         }

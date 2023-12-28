@@ -1,4 +1,5 @@
-﻿using JobPortal.views.auth;
+﻿using JobPortal.models;
+using JobPortal.views.auth;
 using JobPortal.views.common;
 using JobPortal.views.dashboard.employer;
 using System;
@@ -26,7 +27,9 @@ namespace JobPortal.views.dashboard
         public DEmployer()
         {
             InitializeComponent();
-            
+            companyProfilePage = new DCompanyProfile();
+            addUserControl(companyProfilePage);
+            label1.Text = "Welcome, " + EmployerUser.FirstName + " " + EmployerUser.LastName;
         }
 
         private void addUserControl(UserControl userControl)
@@ -63,18 +66,9 @@ namespace JobPortal.views.dashboard
 
         private void button4_Click(object sender, EventArgs e)
         {
-            if (managejobspage == null)
-            {
-                managejobspage = new Managejobs();
-                managejobspage.Dock = DockStyle.Fill;
-                panel9.Controls.Clear();
-                panel9.Controls.Add(managejobspage);
-            }
-            else
-            {
-                panel9.Controls.Clear();
-                panel9.Controls.Add(managejobspage);
-            }
+            managejobspage = new Managejobs();
+            addUserControl(managejobspage);
+            
         }
 
         private void panel9_Paint(object sender, PaintEventArgs e)

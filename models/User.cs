@@ -8,18 +8,23 @@ namespace JobPortal.models
 {
     internal class User
     {
-        public static int Id { get; set; }
-        public static string FullName { get; set; }
+        public static string Id { get; set; }
+        public static string FirstName { get; set; }
+        public static string LastName { get; set; }
         public static string Email { get; set; }
-        public static string Password { get; set; }
         public static string AccountType { get; set; }
         public static string Phone {  get; set; }
-        public User(int id, string fullName, string email, string password, string accountType, string phone)
+
+        public User()
+        {
+
+        }
+        public User(string id, string firstName, string lastName, string email, string accountType, string phone)
         {
             Id = id;
-            FullName = fullName;
+            FirstName = firstName;
+            LastName = lastName;
             Email = email;
-            Password = password;
             AccountType = accountType;
             Phone = phone;
         }

@@ -48,7 +48,7 @@
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(4, 4);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(732, 251);
             this.panel1.TabIndex = 0;
@@ -58,7 +58,7 @@
             // 
             this.button1.BackColor = System.Drawing.Color.DarkOrange;
             this.button1.Location = new System.Drawing.Point(272, 180);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(203, 38);
             this.button1.TabIndex = 5;
@@ -75,6 +75,7 @@
             this.label5.Size = new System.Drawing.Size(73, 16);
             this.label5.TabIndex = 4;
             this.label5.Text = "$35k - $45k";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label4
             // 
@@ -85,6 +86,7 @@
             this.label4.Size = new System.Drawing.Size(51, 16);
             this.label4.TabIndex = 3;
             this.label4.Text = "full time";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label3
             // 
@@ -95,6 +97,7 @@
             this.label3.Size = new System.Drawing.Size(76, 16);
             this.label3.TabIndex = 2;
             this.label3.Text = "London, UK";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label2
             // 
@@ -105,6 +108,7 @@
             this.label2.Size = new System.Drawing.Size(61, 16);
             this.label2.TabIndex = 1;
             this.label2.Text = "Segment";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label1
             // 
@@ -116,6 +120,7 @@
             this.label1.Size = new System.Drawing.Size(343, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "Software Engineer (Android), Libraries";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // jobcard
             // 
@@ -123,9 +128,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "jobcard";
-            this.Size = new System.Drawing.Size(742, 271);
+            this.Size = new System.Drawing.Size(741, 260);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
